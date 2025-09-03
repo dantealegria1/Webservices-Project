@@ -1,0 +1,54 @@
+name: Sync parcial01 from DatingApp2025
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # runs daily at 09:00 UTC
+  workflow_dispatch:       # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write          # needed to push to your repo
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout your repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # need full history for merges/ff
+
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream and fetch source branch
+        run: |
+          git remote add upstream https://github.com/basaar24/DatingApp2025.git
+          git fetch upstream parcial01
+
+      - name: Create target branch locally if missing
+        run: |
+          TARGET=parcial01-from-datingapp
+          if git show-ref --verify --quiet "refs/heads/$TARGET"; then
+            echo "Branch $TARGET already exists."
+          else
+            git branch "$TARGET" "upstream/parcial01"
+          fi
+
+      - name: Merge (fast-forward when possible)
+        run: |
+          TARGET=parcial01-from-datingapp
+          git checkout "$TARGET"
+          # Try fast-forward first; fall back to a merge commit if needed
+          if git merge --ff-only upstream/parcial01; then
+            echo "Fast-forwarded $TARGET to upstream/parcial01"
+          else
+            echo "Not a fast-forward; doing a regular merge"
+            git merge --no-edit upstream/parcial01
+          fi
+
+      - name: Push updates to your repo
+        run: |
+          git push origin HEAD
