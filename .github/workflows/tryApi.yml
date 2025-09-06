@@ -20,7 +20,8 @@ jobs:
         dotnet-version: '9.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore API
+  run: dotnet restore DatingApp.sln
+
 
     - name: Build
       run: dotnet build API --no-restore --configuration Release
