@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GgkzYU5x6LM=",
+  "success": true,
+  "projectFilePath": "/Users/dantealegria/Desktop/Universidad/9no-Semestre/Webservices-Project/API/API.csproj",
+  "expectedPackageFiles": [
+    "/Users/dantealegria/.nuget/packages/microsoft.aspnetcore.openapi/9.0.8/microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "/Users/dantealegria/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
