@@ -2,7 +2,7 @@ name: Test API with EF Core + SQLite
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Parcial01-Dante ]
   pull_request:
     branches: [ main ]
 
