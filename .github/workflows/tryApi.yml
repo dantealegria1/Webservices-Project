@@ -1,6 +1,7 @@
 name: Test API with EF Core + SQLite
 
 on:
+  workflow_dispatch: 
   push:
     branches: [ Parcial01-Dante ]
   pull_request:
