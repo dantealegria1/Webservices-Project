@@ -1,0 +1,16 @@
+# Build results
+bin/
+obj/
+
+# Rider / VS Code / Visual Studio
+.vscode/
+.idea/
+
+# Otros temporales
+*.user
+*.suo
+*.cache
+*.log
+*.db
+
+.fake
