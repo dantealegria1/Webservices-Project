@@ -30,7 +30,7 @@ jobs:
 
       - name: Create target branch locally if missing
         run: |
-          TARGET=parcial01-from-datingapp
+          TARGET=parcial02-from-datingapp
           if git show-ref --verify --quiet "refs/heads/$TARGET"; then
             echo "Branch $TARGET already exists."
           else
@@ -39,7 +39,7 @@ jobs:
 
       - name: Merge (fast-forward when possible)
         run: |
-          TARGET=parcial01-from-datingapp
+          TARGET=parcial02-from-datingapp
           git checkout "$TARGET"
           # Try fast-forward first; fall back to a merge commit if needed
           if git merge --ff-only upstream/parcial01; then
