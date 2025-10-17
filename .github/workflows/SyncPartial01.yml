@@ -49,8 +49,12 @@ jobs:
             git merge --no-edit upstream/parcial02
           fi
 
-      - name: Pull latest from origin (merge)
+      - name: Fetch latest changes from origin
+        run: git fetch origin
+
+      - name: Reset local branch to remote state (force update)
         run: |
-          git pull origin $(git rev-parse --abbrev-ref HEAD) --no-edit
+          git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)
+
 
 
