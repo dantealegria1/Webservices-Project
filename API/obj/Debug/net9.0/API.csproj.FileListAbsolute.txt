@@ -157,3 +157,5 @@
 /Users/dantealegria/Desktop/Universidad/9no-Semestre/Webservices-Project/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/dantealegria/Desktop/Universidad/9no-Semestre/Webservices-Project/API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/dantealegria/Desktop/Universidad/9no-Semestre/Webservices-Project/API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/dantealegria/Desktop/Universidad/9no-Semestre/Webservices-Project/API/bin/Debug/net9.0/package-lock.json
+/Users/dantealegria/Desktop/Universidad/9no-Semestre/Webservices-Project/API/bin/Debug/net9.0/package.json
