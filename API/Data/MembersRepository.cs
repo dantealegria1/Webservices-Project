@@ -1,33 +1,39 @@
 using System;
 using API.Entities;
 using API.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Data;
 
-public class MembersRepository : IMembersRepository
+public class MembersRepository(AppDbContext context) : IMembersRepository
 {
-    public Task<Member?> GetMemberAsync(string id)
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<Member?> GetMemberAsync(string id)
+{
+        return await context.Members.FindAsync(id);
+}
 
-    public Task<IReadOnlyList<Member>> GetMembersAsync()
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<IReadOnlyList<Member>> GetMembersAsync()
+{
+        return await context.Members
+                    // .Include(m => m.Photos)
+                    .ToListAsync();
+}
 
-    public Task<IReadOnlyList<Photo>> GetPhotosAsync(string memberId)
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<IReadOnlyList<Photo>> GetPhotosAsync(string memberId)
+{
+        return await context.Members
+            .Where(m => m.Id == memberId)
+            .SelectMany(m => m.Photos)
+            .ToListAsync();
+}
 
-    public Task<bool> SaveAllAsync()
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<bool> SaveAllAsync()
+{
+        return await context.SaveChangesAsync() > 0;
+}
 
-    public void Update(Member member)
-    {
-        throw new NotImplementedException();
-    }
+public void Update(Member member)
+{
+        context.Entry(member).State = EntityState.Modified;
+}
 }
