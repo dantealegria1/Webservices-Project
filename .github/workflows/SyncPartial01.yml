@@ -34,7 +34,7 @@ jobs:
           if git show-ref --verify --quiet "refs/heads/$TARGET"; then
             echo "Branch $TARGET already exists."
           else
-            git branch "$TARGET" "upstream/parcial02
+            git branch "$TARGET" "upstream/parcial02"
           fi
 
       - name: Merge (fast-forward when possible)
@@ -42,7 +42,7 @@ jobs:
           TARGET=parcial02-from-datingapp
           git checkout "$TARGET"
           # Try fast-forward first; fall back to a merge commit if needed
-          if git merge --ff-only upstream/parcial01; then
+          if git merge --ff-only upstream/parcial02; then
             echo "Fast-forwarded $TARGET to upstream/parcial02"
           else
             echo "Not a fast-forward; doing a regular merge"
