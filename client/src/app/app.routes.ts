@@ -7,8 +7,12 @@ import { Messages } from '../features/messages/messages';
 import { authGuard } from '../core/guard/auth-guard';
 import { TestErrors } from '../features/test-errors/test-errors';
 import { ServerError } from '../shared/errors/server-error/server-error';
+import { MemberProfile } from '../features/member-profile/member-profile';
+import { MemberPhotos } from '../features/member-photos/member-photos';
+import { MemberMessages } from '../features/member-messages/member-messages';
 
 export const routes: Routes = [
+<<<<<<< HEAD
     { path: "", component: Home },
     {
       path: "",
@@ -25,3 +29,30 @@ export const routes: Routes = [
     { path: "server-error", component: ServerError },
     { path: "**", component: Home }
   ];
+=======
+  { path: "", component: Home },
+  {
+    path: "",
+    runGuardsAndResolvers: "always",
+    canActivate: [authGuard],
+    children: [
+      { path: "members", component: MemberList },
+      {
+        path: "members/:id",
+        component: MemberDetail,
+        children: [
+          { path: "", redirectTo: "profile", pathMatch: "full" },
+          { path: "profile", component: MemberProfile, title: "Profile"},
+          { path: "photos", component: MemberPhotos, title: "Photos"},
+          { path: "messages", component: MemberMessages, title: "Messages"},
+        ]
+      },
+      { path: "lists", component: Lists },
+      { path: "messages", component: Messages }
+    ]
+  },
+  { path: "errors", component: TestErrors },
+  { path: "server-error", component: ServerError },
+  { path: "**", component: NotFound }
+];
+>>>>>>> dd0ac491 (Parcial03 - Add member detail child components)
