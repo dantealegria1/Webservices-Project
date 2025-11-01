@@ -1,4 +1,4 @@
-name: Sync parcial01 from DatingApp2025
+name: Sync parcial02 from DatingApp2025
 
 on:
   schedule:
@@ -26,27 +26,27 @@ jobs:
       - name: Add upstream and fetch source branch
         run: |
           git remote add upstream https://github.com/basaar24/DatingApp2025.git
-          git fetch upstream parcial01
+          git fetch upstream parcial02
 
       - name: Create target branch locally if missing
         run: |
-          TARGET=parcial01-from-datingapp
+          TARGET=parcial02-from-datingapp
           if git show-ref --verify --quiet "refs/heads/$TARGET"; then
             echo "Branch $TARGET already exists."
           else
-            git branch "$TARGET" "upstream/parcial01"
+            git branch "$TARGET" "upstream/parcial02"
           fi
 
       - name: Merge (fast-forward when possible)
         run: |
-          TARGET=parcial01-from-datingapp
+          TARGET=parcial02-from-datingapp
           git checkout "$TARGET"
           # Try fast-forward first; fall back to a merge commit if needed
-          if git merge --ff-only upstream/parcial01; then
-            echo "Fast-forwarded $TARGET to upstream/parcial01"
+          if git merge --ff-only upstream/parcial02; then
+            echo "Fast-forwarded $TARGET to upstream/parcial02"
           else
             echo "Not a fast-forward; doing a regular merge"
-            git merge --no-edit upstream/parcial01
+            git merge --no-edit upstream/parcial02
           fi
 
       - name: Push updates to your repo
