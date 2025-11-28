@@ -1,16 +1,27 @@
-# Build results
-bin/
-obj/
 
-# Rider / VS Code / Visual Studio
-.vscode/
-.idea/
+# Fody - auto-generated XML schema
+FodyWeavers.xsd
 
-# Otros temporales
-*.user
-*.suo
-*.cache
-*.log
-*.db
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-.fake
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Windows Installer files from build outputs
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# SQLite database files
+*.db*

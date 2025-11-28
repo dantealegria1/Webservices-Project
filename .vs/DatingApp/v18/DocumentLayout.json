@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Webservices-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|c:\\webservices-project\\tests\\api.unittests\\controllers\\memberscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|solutionrelative:tests\\api.unittests\\controllers\\memberscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|c:\\webservices-project\\tests\\api.unittests\\globaltestsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|solutionrelative:tests\\api.unittests\\globaltestsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|c:\\webservices-project\\tests\\api.unittests\\data\\membersrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|solutionrelative:tests\\api.unittests\\data\\membersrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|c:\\webservices-project\\tests\\api.unittests\\controllers\\memberscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|solutionrelative:tests\\api.unittests\\controllers\\memberscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBAFC0F9-5B69-AE5B-776E-B650E010DF04}|src\\API\\API.csproj|c:\\webservices-project\\src\\api\\dtos\\seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,33 +74,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "MembersRepositoryTests.cs",
+              "DocumentMoniker": "C:\\Webservices-Project\\tests\\API.UnitTests\\Data\\MembersRepositoryTests.cs",
+              "RelativeDocumentMoniker": "tests\\API.UnitTests\\Data\\MembersRepositoryTests.cs",
+              "ToolTip": "C:\\Webservices-Project\\tests\\API.UnitTests\\Data\\MembersRepositoryTests.cs",
+              "RelativeToolTip": "tests\\API.UnitTests\\Data\\MembersRepositoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T04:26:34.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MembersControllerTests.cs",
               "DocumentMoniker": "C:\\Webservices-Project\\tests\\API.UnitTests\\Controllers\\MembersControllerTests.cs",
               "RelativeDocumentMoniker": "tests\\API.UnitTests\\Controllers\\MembersControllerTests.cs",
               "ToolTip": "C:\\Webservices-Project\\tests\\API.UnitTests\\Controllers\\MembersControllerTests.cs",
               "RelativeToolTip": "tests\\API.UnitTests\\Controllers\\MembersControllerTests.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowEEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T04:19:23.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GlobalTestSetup.cs",
               "DocumentMoniker": "C:\\Webservices-Project\\tests\\API.UnitTests\\GlobalTestSetup.cs",
               "RelativeDocumentMoniker": "tests\\API.UnitTests\\GlobalTestSetup.cs",
               "ToolTip": "C:\\Webservices-Project\\tests\\API.UnitTests\\GlobalTestSetup.cs",
               "RelativeToolTip": "tests\\API.UnitTests\\GlobalTestSetup.cs",
-              "ViewState": "AgIAAAAAAAAANDMzMzPrvwgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAABAMzMzM7MRwBQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T04:15:42.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Seed.cs",
               "DocumentMoniker": "C:\\Webservices-Project\\src\\API\\DTOs\\Seed.cs",
               "RelativeDocumentMoniker": "src\\API\\DTOs\\Seed.cs",
