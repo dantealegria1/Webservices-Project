@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
-selector: 'app-member-photos',
+  selector: 'app-member-photos',
   imports: [AsyncPipe],
-templateUrl: './member-photos.html',
-styleUrl: './member-photos.css'
+  templateUrl: './member-photos.html',
+  styleUrl: './member-photos.css',
 })
 export class MemberPhotos {
   private membersService = inject(MembersService);
@@ -17,7 +17,7 @@ export class MemberPhotos {
   protected photos$?: Observable<Photo[]>;
 
   constructor() {
-    const memberId = this.route.parent?.snapshot.paramMap.get("id");
+    const memberId = this.route.parent?.snapshot.paramMap.get('id');
     if (memberId) {
       this.photos$ = this.membersService.getPhotos(memberId);
     }
@@ -25,7 +25,7 @@ export class MemberPhotos {
 
   get photoMocks() {
     return Array.from({ length: 20 }, (_, i) => ({
-      url: "./user.jpg"
+      url: './user.jpg',
     }));
   }
 }
