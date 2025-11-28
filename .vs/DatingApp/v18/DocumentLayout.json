@@ -82,8 +82,7 @@
               "RelativeToolTip": "tests\\API.UnitTests\\Data\\MembersRepositoryTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T04:26:34.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T04:26:34.269Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "tests\\API.UnitTests\\Controllers\\MembersControllerTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T04:19:23.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T04:19:23.262Z"
             },
             {
               "$type": "Document",
@@ -106,7 +104,7 @@
               "RelativeDocumentMoniker": "tests\\API.UnitTests\\GlobalTestSetup.cs",
               "ToolTip": "C:\\Webservices-Project\\tests\\API.UnitTests\\GlobalTestSetup.cs",
               "RelativeToolTip": "tests\\API.UnitTests\\GlobalTestSetup.cs",
-              "ViewState": "AgIAAAgAAABAMzMzM7MRwBQAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAABAMzMzM7MRwBoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T04:15:42.978Z",
               "EditorCaption": ""
