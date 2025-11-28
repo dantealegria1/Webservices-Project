@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Webservices-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|c:\\webservices-project\\tests\\api.unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|solutionrelative:tests\\api.unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|c:\\webservices-project\\tests\\api.unittests\\globaltestsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDDD48C0-FF74-42CA-B40F-5FFF364C81B3}|tests\\API.UnitTests\\API.UnitTests.csproj|solutionrelative:tests\\api.unittests\\globaltestsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBAFC0F9-5B69-AE5B-776E-B650E010DF04}|src\\API\\API.csproj|c:\\webservices-project\\src\\api\\dtos\\seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,34 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 11,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Webservices-Project\\tests\\API.UnitTests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "tests\\API.UnitTests\\UnitTest1.cs",
-              "ToolTip": "C:\\Webservices-Project\\tests\\API.UnitTests\\UnitTest1.cs",
-              "RelativeToolTip": "tests\\API.UnitTests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:54:26.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Seed.cs",
-              "DocumentMoniker": "C:\\Webservices-Project\\src\\API\\DTOs\\Seed.cs",
-              "RelativeDocumentMoniker": "src\\API\\DTOs\\Seed.cs",
-              "ToolTip": "C:\\Webservices-Project\\src\\API\\DTOs\\Seed.cs",
-              "RelativeToolTip": "src\\API\\DTOs\\Seed.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwBsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:42:05.9Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -89,6 +63,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GlobalTestSetup.cs",
+              "DocumentMoniker": "C:\\Webservices-Project\\tests\\API.UnitTests\\GlobalTestSetup.cs",
+              "RelativeDocumentMoniker": "tests\\API.UnitTests\\GlobalTestSetup.cs",
+              "ToolTip": "C:\\Webservices-Project\\tests\\API.UnitTests\\GlobalTestSetup.cs",
+              "RelativeToolTip": "tests\\API.UnitTests\\GlobalTestSetup.cs",
+              "ViewState": "AgIAAAAAAAAANDMzMzPrvwgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T04:15:42.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Seed.cs",
+              "DocumentMoniker": "C:\\Webservices-Project\\src\\API\\DTOs\\Seed.cs",
+              "RelativeDocumentMoniker": "src\\API\\DTOs\\Seed.cs",
+              "ToolTip": "C:\\Webservices-Project\\src\\API\\DTOs\\Seed.cs",
+              "RelativeToolTip": "src\\API\\DTOs\\Seed.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwBsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:42:05.9Z",
+              "EditorCaption": ""
             }
           ]
         }
