@@ -1,8 +1,7 @@
-
+import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { LoginCreds, RegisterCreds, User } from '../../types/user';
 import { Observable, tap } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -11,7 +10,6 @@ import { environment } from '../../environments/environment';
 export class AccountService {
   private http = inject(HttpClient);
   currentUser = signal<User | null>(null);
-
   baseUrl = environment.apiUrl;
 
   register(creds: RegisterCreds): Observable<User> {
@@ -38,6 +36,7 @@ export class AccountService {
     localStorage.setItem("user", JSON.stringify(user));
     this.currentUser.set(user);
   }
+
   logout() {
     localStorage.removeItem("user");
     this.currentUser.set(null);

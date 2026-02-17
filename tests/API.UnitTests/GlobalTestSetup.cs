@@ -1,6 +1,5 @@
-﻿using API.Data;
+using API.Data;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace API.UnitTests;
 

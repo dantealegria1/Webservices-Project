@@ -1,3 +1,4 @@
+import { Routes } from '@angular/router';
 import { Home } from '../features/home/home';
 import { MemberList } from '../features/members/member-list/member-list';
 import { MemberDetail } from '../features/members/member-detail/member-detail';
@@ -11,7 +12,6 @@ import { MemberProfile } from '../features/member-profile/member-profile';
 import { MemberPhotos } from '../features/member-photos/member-photos';
 import { MemberMessages } from '../features/member-messages/member-messages';
 import { memberResolver } from '../features/members/member-resolver';
-import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   { path: "", component: Home },

@@ -1,13 +1,14 @@
-
-using API.Interfaces;
-using API.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using API.Entities;
+using API.Interfaces;
 using Microsoft.IdentityModel.Tokens;
+
 namespace API.Services;
 
-public class TokenService(IConfiguration configuration) : ITokenService{
+public class TokenService(IConfiguration configuration) : ITokenService
+{
     public string CreateToken(AppUser user)
     {
         var tokenKey = configuration["TokenKey"] ?? throw new ArgumentNullException("Cannot get the token key");

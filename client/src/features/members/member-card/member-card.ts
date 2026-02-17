@@ -10,5 +10,5 @@ import { AgePipe } from '../../../core/pipes/age-pipe';
   styleUrl: './member-card.css'
 })
 export class MemberCard {
-member = input.required<Member>();
+  member = input.required<Member>();
 }

@@ -1,4 +1,4 @@
-﻿using API.Data;
+using API.Data;
 using API.Entities;
 using API.Interfaces;
 
@@ -8,7 +8,7 @@ public class MembersRepositoryTests
 {
     private AppDbContext _context;
     private IMembersRepository _membersRepository;
-
+    
     [SetUp]
     public void Setup()
     {

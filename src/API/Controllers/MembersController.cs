@@ -1,32 +1,29 @@
-using API.Data;
 using API.Entities;
 using API.Interfaces;
+using API.Mappers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
 [Authorize]
 public class MembersController(IMembersRepository membersRepository) : BaseApiController
 {
-    // [AllowAnonymous]
-[HttpGet]
+    [HttpGet]
     public async Task<ActionResult<IReadOnlyList<Member>>> GetMembers()
-{
+    {
         return Ok(await membersRepository.GetMembersAsync());
-}
+    }
 
-    // [AllowAnonymous]
-[HttpGet("{id}")] // https://localhost:5001/api/members/bob-id
+    [HttpGet("{id}")] // https://localhost:5001/api/members/bob-id
     public async Task<ActionResult<Member>> GetMember(string id)
-{
+    {
         var member = await membersRepository.GetMemberAsync(id);
 
-if (member == null) return NotFound();
+        if (member == null) return NotFound();
 
-return member;
-}
+        return member.ToResponse();
+    }
 
     [HttpGet("{id}/photos")]
     public async Task<ActionResult<IReadOnlyList<Photo>>> GetPhotos(string id)
